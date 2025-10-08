@@ -14,8 +14,10 @@ app.get("/about", (req, res) => {
 
 app.get("/contact", (req, res) => {
   res.render("contact.ejs");
+  console.log("Contact page accessed");
 });
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
+  console.log("Server started");
 });
